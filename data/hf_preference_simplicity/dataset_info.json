@@ -1,0 +1,32 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "chosen_response": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rejected_response": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "chosen_score": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "rejected_score": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "reward_type": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

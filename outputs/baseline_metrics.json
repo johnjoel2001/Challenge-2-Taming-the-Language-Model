@@ -1,0 +1,10 @@
+{
+  "readability": 50.78932690182203,
+  "avg_sentence_length": 31.770833333333336,
+  "avg_word_length": 4.6642661550602496,
+  "response_length": 100.625,
+  "lexical_diversity": 0.9348787199504097,
+  "completeness": 0.1328125,
+  "repetition": 0.0,
+  "model": "baseline"
+}

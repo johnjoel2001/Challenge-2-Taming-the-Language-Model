@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "completeness_loss": 6,
+    "reward_hacking": 1,
+    "total_flags": 7,
+    "pairwise_overlap": 0.1375,
+    "template_repetition_cross": false
+  },
+  "ppo_simplicity": {
+    "completeness_loss": 6,
+    "total_flags": 6,
+    "pairwise_overlap": 0.1245,
+    "template_repetition_cross": false
+  },
+  "ppo_balanced": {
+    "completeness_loss": 6,
+    "reward_hacking": 4,
+    "over_shortening": 3,
+    "low_diversity": 3,
+    "total_flags": 16,
+    "pairwise_overlap": 0.1059,
+    "template_repetition_cross": false
+  }
+}

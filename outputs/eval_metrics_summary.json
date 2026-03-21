@@ -1,0 +1,47 @@
+[
+  {
+    "model": "baseline",
+    "readability": 43.458,
+    "avg_sentence_length": 36.2458,
+    "avg_word_length": 4.7342,
+    "response_length": 116.125,
+    "lexical_diversity": 0.9473,
+    "completeness": 0.2143,
+    "repetition": 0.0,
+    "simplicity_heuristic": 0.2047,
+    "balanced_heuristic": 0.1881,
+    "rm_simplicity_score": -0.2811,
+    "rm_balanced_score": -0.2293,
+    "pairwise_overlap": 0.1375
+  },
+  {
+    "model": "ppo_balanced",
+    "readability": 30.5322,
+    "avg_sentence_length": 25.0115,
+    "avg_word_length": 4.0674,
+    "response_length": 83.125,
+    "lexical_diversity": 0.7715,
+    "completeness": 0.202,
+    "repetition": 0.0,
+    "simplicity_heuristic": 0.2203,
+    "balanced_heuristic": 0.115,
+    "rm_simplicity_score": -0.2879,
+    "rm_balanced_score": -0.2826,
+    "pairwise_overlap": 0.1059
+  },
+  {
+    "model": "ppo_simplicity",
+    "readability": 32.1868,
+    "avg_sentence_length": 27.8092,
+    "avg_word_length": 5.3751,
+    "response_length": 110.375,
+    "lexical_diversity": 0.9369,
+    "completeness": 0.1942,
+    "repetition": 0.0,
+    "simplicity_heuristic": 0.1492,
+    "balanced_heuristic": 0.185,
+    "rm_simplicity_score": -0.3242,
+    "rm_balanced_score": -0.2903,
+    "pairwise_overlap": 0.1245
+  }
+]
