@@ -1,24 +1,25 @@
 {
   "baseline": {
-    "completeness_loss": 6,
-    "reward_hacking": 1,
+    "completeness_loss": 4,
+    "reward_hacking": 3,
     "total_flags": 7,
-    "pairwise_overlap": 0.1375,
+    "pairwise_overlap": 0.1675,
     "template_repetition_cross": false
   },
   "ppo_simplicity": {
-    "completeness_loss": 6,
-    "total_flags": 6,
-    "pairwise_overlap": 0.1245,
+    "completeness_loss": 9,
+    "reward_hacking": 4,
+    "over_shortening": 2,
+    "low_diversity": 2,
+    "total_flags": 17,
+    "pairwise_overlap": 0.0811,
     "template_repetition_cross": false
   },
   "ppo_balanced": {
-    "completeness_loss": 6,
-    "reward_hacking": 4,
-    "over_shortening": 3,
-    "low_diversity": 3,
-    "total_flags": 16,
-    "pairwise_overlap": 0.1059,
+    "completeness_loss": 7,
+    "reward_hacking": 2,
+    "total_flags": 9,
+    "pairwise_overlap": 0.1058,
     "template_repetition_cross": false
   }
 }

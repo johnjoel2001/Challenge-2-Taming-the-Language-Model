@@ -1,4 +1,4 @@
 model,readability,avg_sentence_length,avg_word_length,response_length,lexical_diversity,completeness,repetition,simplicity_heuristic,balanced_heuristic,rm_simplicity_score,rm_balanced_score,pairwise_overlap
-baseline,43.458,36.2458,4.7342,116.125,0.9473,0.2143,0.0,0.2047,0.1881,-0.2811,-0.2293,0.1375
-ppo_balanced,30.5322,25.0115,4.0674,83.125,0.7715,0.202,0.0,0.2203,0.115,-0.2879,-0.2826,0.1059
-ppo_simplicity,32.1868,27.8092,5.3751,110.375,0.9369,0.1942,0.0,0.1492,0.185,-0.3242,-0.2903,0.1245
+baseline,38.2415,36.6111,4.9764,131.8667,0.945,0.2959,0.0,0.1763,0.1746,3.6577,2.8368,0.1675
+ppo_balanced,51.4929,27.5063,5.0322,113.0,0.9408,0.1742,0.0,0.232,0.2773,4.9211,3.6389,0.1058
+ppo_simplicity,35.5607,34.2765,4.1753,87.9333,0.819,0.097,0.0,0.2251,0.1562,4.7516,3.2277,0.0811

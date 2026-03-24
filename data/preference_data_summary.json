@@ -1,0 +1,7 @@
+{
+  "total_candidates": 400,
+  "simplicity_pairs": 987,
+  "balanced_pairs": 997,
+  "unique_prompts": 50,
+  "candidates_per_prompt": 8
+}

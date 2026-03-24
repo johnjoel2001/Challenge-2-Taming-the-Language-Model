@@ -10,9 +10,17 @@ build/
 venv/
 env/
 .venv/
+venv_test/
 
-# Model weights (too large for git)
-outputs/models/
+# Model weights (stored locally, not in git)
+outputs/models/**/*.pt
+outputs/models/**/*.safetensors
+outputs/models/**/*.bin
+outputs/models/**/pytorch_model*
+
+# Temp files from model saving
+outputs/models/**/.*.MH*
+outputs/models/**/.*.tmp
 
 # IDE
 .vscode/
