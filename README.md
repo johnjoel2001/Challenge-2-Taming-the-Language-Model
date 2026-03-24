@@ -47,7 +47,7 @@ The core finding: the simplicity reward produced *more* misalignment flags than 
 
 ![PPO Training Curves](outputs/figures/ppo_training_curves.png)
 
-Both models show reward improvement over training. Simplicity-PPO converges quickly by shortening responses; Balanced-PPO maintains a higher floor through the multi-objective signal.
+Simplicity-PPO shows volatile early reward followed by convergence through response shortening. Balanced-PPO maintains a more stable reward trajectory driven by the multi-objective signal.
 
 ### Metric Comparison Across Models
 
@@ -79,7 +79,7 @@ Balanced-PPO is the only model that moves in the positive direction on readabili
 - **Simplicity-PPO produced more misalignment than baseline** (17 vs 7 flags). Single-objective length minimisation collapsed completeness from 0.296 to 0.097 and lexical diversity from 0.945 to 0.819.
 - **Reward hacking appeared within 30 steps.** Simplicity-PPO generated 4 reward-hacking cases — responses that score well on surface readability metrics while containing little relevant content.
 - **RLHF cannot inject knowledge the base model doesn't have.** Completeness maxes out at ~30% across all models — GPT-2 at 124M simply lacks the factual depth required by these prompts.
-- **Multi-objective rewards are not inherently unstable in small regimes.** With proper hyperparameters (gamma=1, clip_range=0.1, single inner epoch), balanced training was smoother than the single-objective run.
+- **Multi-objective rewards are not inherently unstable in small regimes.** Balanced-PPO training was more stable and produced better readability gains than the single-objective run despite optimising across four competing signals.
 - The simplicity reward successfully reduced mean response length (132 → 88 words) and pairwise overlap (0.168 → 0.081), but these surface metrics masked a substantial drop in response quality.
 
 ---
@@ -134,7 +134,7 @@ A common intuition is that simpler rewards are more predictable. This experiment
 The preference construction improvement — all valid pairs rather than top-vs-bottom, diverse temperature sampling — is what made a real difference in reward model quality. More pairs from the same prompts is more valuable than more prompts with a single pair each.
 
 **4. PPO for language models requires single-turn-specific configuration.**
-Standard PPO defaults come from robotics and game environments with long horizons. For single-turn text generation, `gamma=1.0` is correct (no temporal discounting), `ppo_epochs=1` prevents reference divergence, and `vf_coef` must match the TRL default (0.1) or value loss dominates. Getting these wrong produces negative KL divergence and training collapse regardless of other hyperparameters.
+Standard PPO defaults come from robotics and game environments with long horizons. For single-turn text generation, `gamma=1.0` is correct (no temporal discounting), `ppo_epochs=1` keeps the policy close to the reference between data refreshes, and `vf_coef` should match the TRL default (0.1) to prevent value loss from dominating policy gradients.
 
 **5. RLHF steers style, not knowledge.**
 Completeness was bounded at ~30% across all three models because GPT-2 at 124M does not contain the factual knowledge required. RLHF can change *how* a model expresses itself but cannot surface information it was never trained on. The ceiling for any reward-driven approach is set by the base model's pretraining, not the fine-tuning signal.
@@ -202,7 +202,7 @@ The reward model architecture is shared between both variants — GPT-2 as the e
 │   ├── misalignment_analysis.py          # Stage 6
 │   └── plotting.py                       # Stage 7
 └── outputs/
-    ├── models/                           # Reward models and PPO-tuned models (Git LFS)
+    ├── models/                           # Reward models and PPO-tuned models (local only)
     ├── figures/                          # 6 trade-off plots
     ├── eval_full.csv                     # Per-prompt evaluation across all models
     ├── eval_metrics_summary.csv          # Aggregated metric comparison
@@ -270,4 +270,4 @@ python3 -m src.plotting
 
 Each stage can be run independently once its upstream outputs exist. To swap the base model, change `BASE_MODEL_NAME` in `src/config.py`. All scripts use `SEED = 42` with device auto-detection: CUDA → MPS → CPU.
 
-Model weights are stored in `outputs/models/` and tracked via **Git LFS** (`.pt`, `.bin`, `.safetensors` files).
+Model weights are stored locally in `outputs/models/` and excluded from version control due to size.
