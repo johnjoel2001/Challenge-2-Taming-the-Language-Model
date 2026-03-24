@@ -1,5 +1,7 @@
 # Reward Design Matters: A Multi-Objective RLHF Study of Clarity, Completeness, and Over-Optimization
 
+> Running on a cloud-based GPU? See [RUNPOD.md](RUNPOD.md) for SSH setup, file transfer, and network volume instructions (using RunPod as an example).
+
 Most RLHF work focuses on the algorithm — PPO configuration, KL penalties, value head design. The reward function gets less attention, even though it's the part that actually encodes what you want the model to do. That asymmetry is worth studying.
 
 This project implements a complete end-to-end RLHF pipeline on GPT-2 (124M) and uses it to answer a concrete question: **how does reward design affect clarity, completeness, and over-optimization in a small aligned model?** Two reward models are trained — one that optimises purely for simplicity, one that attempts to balance multiple objectives — and their behavioral differences are measured systematically across readability, completeness, lexical diversity, repetition, and failure-mode detection.
