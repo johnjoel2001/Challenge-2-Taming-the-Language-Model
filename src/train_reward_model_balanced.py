@@ -1,11 +1,7 @@
-"""
-train_reward_model_balanced.py — STAGE 3B: Train Balanced Reward Model
+"""Stage 3B — Train the balanced reward model.
 
-Trains a reward model that learns to prefer responses balancing readability,
-completeness, appropriate length, and low repetition.
-
-Input : data/preference_balanced.csv
-Output: outputs/models/reward_model_balanced/
+Identical architecture and training loop as Stage 3A; only the preference
+data differs (balanced heuristic scores instead of simplicity scores).
 """
 
 import os

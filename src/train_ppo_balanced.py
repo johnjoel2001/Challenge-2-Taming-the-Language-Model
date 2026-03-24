@@ -1,13 +1,6 @@
-"""
-train_ppo_balanced.py — STAGE 4B: PPO Training with Balanced Reward
+"""Stage 4B — PPO fine-tuning with the balanced reward model.
 
-Uses TRL's PPOTrainer to fine-tune the base language model using the
-balanced reward model as the scoring function.
-
-Outputs:
-  - outputs/models/ppo_balanced/           (final model)
-  - outputs/ppo_balanced_log.csv           (training log)
-  - outputs/ppo_balanced_samples.csv       (sample generations per step)
+Identical training loop as Stage 4A; only the reward model differs.
 """
 
 import os
@@ -16,7 +9,7 @@ from src.train_ppo_simplicity import run_ppo_training
 
 
 def run():
-    rm_dir = os.path.join(MODELS_DIR, "reward_model_balanced")
+    rm_dir   = os.path.join(MODELS_DIR, "reward_model_balanced")
     save_dir = os.path.join(MODELS_DIR, "ppo_balanced")
     return run_ppo_training(rm_dir, save_dir, "ppo_balanced", label="balanced")
 

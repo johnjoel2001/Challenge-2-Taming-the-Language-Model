@@ -1,84 +1,91 @@
 step,prompt,response,reward
 0,Explain machine learning in simple words.,"
 
-For example:
+Learn simple words
 
-Suppose we want to know which way to look at an object. The question we want to solve depends on our understanding of what sort of object is to be scanned. That is:
+Learn English
 
-Can I get an object with the lowest value or the highest value to the left?
+Learn Russian
 
-If the answer to the question are no, then the same is true for you. When we can't get the object with the lowest value, our solution is that ""I",-0.219472736120224
-1,Explain cloud computing to a school student.,,-0.23432865738868713
-2,Explain gradient descent simply.," The gradient descent pattern (L) is an algorithm for L1 = 0; that is the slope which will be applied when the gradient descent is over reaches an elevation elevation. The slope is calculated by: A.S.L-L, that is the slope and the gradient. A.S.L-L is the slope (this is the gradient from 1,1 gradient to the 0,1 gradient, A to A.L-L, so the L1 is the L2",-0.4696199893951416
-3,Explain machine learning in simple words.,"
+Learn Chinese
 
-The following shows the algorithm, in which is used in:
+Learn French
 
-A B C D D E F G J K L M N O P Q R
+Learn German
 
-The following shows the machine learning by:
+Learn Italian
 
-A B C D E F G J K L L L M O P Q R S S S T
+Learn Japanese
 
-This is the machine learning with:
+Learn Norwegian
 
-A C D E F G J K L L L M O P P Q R S T
+Learn Polish
 
-This machine",-0.13253280520439148
-4,Explain cloud computing to a school student.," Use cloud computing technologies for a student.
+Learn Portuguese
 
-Convert cloud computing to a school. Use cloud computing technologies to a student.
+Learn Spanish
 
-Use cloud computing technology to a school in a classroom and for a personal environment. Use cloud computing technologies to a student.
+Learn Spanish-Style Russian
 
+Learn Swedish
 
-Use cloud computing technologies to a student. Use cloud computing technologies to a school in a classroom and for a personal environment. Use cloud computing technologies to a student.
+Learn Turkish
 
-Use cloud computing technologies to a student. Use cloud computing",-0.08084038645029068
-5,Explain gradient descent simply.,"
-: the gradient descent, a simple gradient descent, a gradient
+Learn Arabic
 
-The gradient descent, a gradation is a gradient descent, and its main gradient is a gradient descent
-
-The gradient descent
-
-The gradient descent
-
-A gradient descent is shown in the following form:
-
-1. A gradient descent of 1
-2. A gradient descent of 1 A 0 and 1
-
-3. A gradient gradient descent of 1 0.1 A 0
-
-4.5 L A",-0.31069228053092957
-6,Explain machine learning in simple words.," Simple
+Learn Russian
 
 
-TODO
+Learn Russian
+
+Learn Russian-Style German
+
+Learn German-Style Spanish
+
+Learn French-Style Japanese
+
+Learn Russian
 
 
-""Don't get so big!""
+Learn French-Style Japanese
 
-""How can I learn Python!
+Learn Japanese-Style Chinese
 
-""Do it with Python?""
+Learn Chinese-Style Italian
 
-""Python?
+Learn Spanish-Style Korean
+
+Learn Chinese
 
 
-""Python!
+Learn Japanese-Style Korean
 
-""Python's
+Learn Japanese
 
-""easy.com""
+Learn Japanese
 
-""Good luck on any job site""
 
-To avoid the usual use of a phrase like the below, ""No more! Easy"" would be an a better question. But when you can learn a language",-0.1186281219124794
-7,Explain cloud computing to a school student.,"
-""We need to make it clear that we will do not take any political action on that level because we have a large amount of resources which we don't have to do that would help the country,"" a government source said.
+Learn Korean-Style Korean
 
-The government would support a national education reform and the opposition.
+Learn Japanese-Style Japanese-Style Turkish
 
-In a statement, the National Education Minister Dr Raj Shah said the issue was ""unexplained"" and would be dealt with in the coming weeks when discussions to form a state were to take",-0.11642598360776901
+Learn German-Style German
+
+Learn German-Style French-",2.6142401695251465
+10,What is a neural network for a beginner?,"
+
+What can I learn from an experienced brain scientist with my current research?
+
+Are there any great things I haven't learned about neural networks?
+
+I'm in a position to do this:
+
+I was going to have a fun experience with the first real neural network, and had to wait around a month to do it.
+
+How has it been going so far?",9.007847785949707
+20,Explain reinforcement learning simply.," The ""D-layer"" is a combination of the ""D-layer"" part of the reinforcement (D1-D3, with the ""D-layer"" being the rest of the network). However, the ""D"" of the second layer is only for learning of the same thing at the beginning, so you do not have enough time to learn it in two different ways, you could just replace the entire list of reinforcement reinforcement learning, and finally it should be so easy it will just be 1D-D-layer, you have to try it with the ""D"" of the first layer for the first time, and you can do that with any d-layer and then by the ""A"" of the first layer we just learn the same thing on the other way.
+
+How to use d-layer and d-layer reinforcement learning in a single layer on the data",4.6576409339904785
+29,What is a recurrent neural network and when do we use it?," (and how do we use it??)
+
+We will take a long time with a recurrent neural network - how can it be used for everyday, without being implemented into a long postscript to implement it.",8.596440315246582

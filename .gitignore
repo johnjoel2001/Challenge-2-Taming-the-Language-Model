@@ -10,9 +10,14 @@ build/
 venv/
 env/
 .venv/
+venv_test/
 
-# Model weights (too large for git)
+# Models directory (stored locally only)
 outputs/models/
+
+# Temp files from model saving
+outputs/models/**/.*.MH*
+outputs/models/**/.*.tmp
 
 # IDE
 .vscode/
