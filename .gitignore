@@ -12,11 +12,8 @@ env/
 .venv/
 venv_test/
 
-# Model weights (stored locally, not in git)
-outputs/models/**/*.pt
-outputs/models/**/*.safetensors
-outputs/models/**/*.bin
-outputs/models/**/pytorch_model*
+# Models directory (stored locally only)
+outputs/models/
 
 # Temp files from model saving
 outputs/models/**/.*.MH*
