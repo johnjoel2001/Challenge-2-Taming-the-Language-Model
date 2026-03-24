@@ -1,7 +1,5 @@
 # Reward Design Matters: A Multi-Objective RLHF Study of Clarity, Completeness, and Over-Optimization
 
-**Training Environment** — NVIDIA B200 (180 GB HBM3e) · 2.2 TB system RAM · 224-core AMD EPYC 9555 · Driver 580.126 · PyTorch 2.12 nightly (cu128)
-
 Most RLHF work focuses on the algorithm — PPO configuration, KL penalties, value head design. The reward function gets less attention, even though it's the part that actually encodes what you want the model to do. That asymmetry is worth studying.
 
 This project implements a complete end-to-end RLHF pipeline on GPT-2 (124M) and uses it to answer a concrete question: **how does reward design affect clarity, completeness, and over-optimization in a small aligned model?** Two reward models are trained — one that optimises purely for simplicity, one that attempts to balance multiple objectives — and their behavioral differences are measured systematically across readability, completeness, lexical diversity, repetition, and failure-mode detection.
